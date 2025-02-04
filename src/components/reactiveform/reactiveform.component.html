@@ -1,0 +1,17 @@
+<div>
+    <h1>Reactive Form</h1>
+    <form [formGroup]="myForm">
+
+        <div *ngFor="let field of formFields" class="form-group">
+            <label [for]="field.name">{{field.label }}</label>
+
+            <input
+            [type]="field.type"
+            [id]="field.name"
+            [formControlName]="field.name"
+            class="form-control"
+          />
+
+        </div>
+    </form> 
+</div>

@@ -1,0 +1,10 @@
+<form [formGroup]="empForm" (ngSubmit)="onPushEmpDetails()">
+    <input type="text" placeholder="Enter Employee name" formControlName="empName">
+    <br>
+    <br>
+    <input type="text" placeholder="Enter Employee department name" formControlName="empDept">
+    <br>
+    <br>
+    <button>Submit</button>
+</form>
+
